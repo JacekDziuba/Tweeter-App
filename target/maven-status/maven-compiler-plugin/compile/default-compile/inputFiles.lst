@@ -1,0 +1,14 @@
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/util/AttributeNames.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/entities/Comment.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/Repositories/TweetRepository.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/entities/Tweet.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/config/WebConfig.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/entities/UserCredential.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/controllers/UserController.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/util/Mappings.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/controllers/TweeterController.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/Repositories/UserRepository.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/util/ViewNames.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/Repositories/CommentRepository.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/entities/User.java
+/Users/martakepa/Desktop/prework/tweeter-app/src/main/java/pl/coderslab/tweeter/DemoApplication.java

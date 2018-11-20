@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: pl.coderslab.tweeterapp.TweeterAppApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.911 s <<< FAILURE! - in pl.coderslab.tweeterapp.TweeterAppApplicationTests
+initializationError(pl.coderslab.tweeterapp.TweeterAppApplicationTests)  Time elapsed: 0.013 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+

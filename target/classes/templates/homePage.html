@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>HopePage!</title>
+</head>
+<body>
+
+<h3 align="center">Welcome to your HomePage! All tweets:</h3>
+
+<div th:each="tweet : ${tweets}">
+    <table align="center" cellpadding="5">
+        <tr>
+            <td th:text="${tweet.user.username} + ': ' + ${tweet.text}">Tweet name</td>
+            <td>
+                <a th:href="@{'/showTweetDetails/' + ${tweet.id}}">Tweet details</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h3 align="center">Add a new tweet:</h3>
+
+<form th:action="@{/homePage}"
+      th:method="post"
+      th:object="${newTweet}">
+
+    <table align="center" cellpadding="5" border="1">
+        <tr>
+            <td>
+                <label th:for="text">Text:</label>
+                <input th:type="text" th:field="*{text}">
+            </td>
+            <td th:if="${#fields.hasErrors('text')}" th:errors="*{text}">Email Error</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" value="Submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

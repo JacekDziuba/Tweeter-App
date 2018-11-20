@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweet details</title>
+</head>
+<body>
+
+<p th:text="'Tweet ID: ' + ${currentTweet.getId()}">TweetID</p>
+<p th:text="'Tweet created on: ' + ${currentTweet.getCreated().getTime()}">Created</p>
+
+<div th:each="comment : ${comments}">
+    <table cellpadding="5">
+        <tr>
+            <td th:text="${comment.user.username}">Comment by: </td>
+        </tr>
+        <tr>
+            <td th:text="${comment.getCreated().getTime()}">Added on: </td>
+        </tr>
+        <tr>
+            <td th:text="${comment.text}">Text: </td>
+        </tr>
+    </table>
+</div>
+
+<form th:action="@{/showTweetDetails/{id} (id=${currentTweet.id})}"
+      th:method="post"
+      th:object="${newComment}">
+
+    <table cellpadding="5">
+        <tr>
+            <td>
+                <label th:for="text">Add a new comment: </label>
+                <input th:type="text" th:field="*{text}"/>
+            </td>
+            <td th:if="${#fields.hasErrors('text')}" th:errors="*{text}">Text Error</td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" value="Submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+<br>
+<a href="/homePage">Take me home</a>
+</body>
+</html>
