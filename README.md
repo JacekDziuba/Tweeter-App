@@ -1,6 +1,16 @@
 # Tweeter-App
-Application with tweeter funtionalities(Posting, Reading, Viewing and Deleting).
+Application with tweeter functionalities(Posting, Reading, Viewing and Deleting).
 
 Technologies used:
 
-Java Spring Hibernate SQL ThyMeLeaf JSP
+   - Java 
+
+   - SpringBoot
+
+   - Hibernate 
+
+   - MySQL 
+
+   - ThyMeLeaf 
+
+   - JSP
